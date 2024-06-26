@@ -192,7 +192,7 @@ class _MainHomeState extends State<MainHome> {
                     width: 250,
                       margin: const EdgeInsets.only(right: 12.0),
                       decoration: BoxDecoration(
-                        color: Colors.black.withOpacity(0.05),
+                        color: Ckwhite,
                         borderRadius: BorderRadius.circular(12.0),
 
                       ),
@@ -222,7 +222,7 @@ class _MainHomeState extends State<MainHome> {
                     width: 250,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(18),
-                      color: Colors.black.withOpacity(0.05),
+                      color: Ckwhite,
 
                     ),
                     padding: const EdgeInsets.all(20),
@@ -239,7 +239,7 @@ class _MainHomeState extends State<MainHome> {
                           ),
                           padding: const EdgeInsets.all(8),
 
-                          child: Text('-\$350.00',style: TextStyle(fontSize: 22, color: CKgreen),),),
+                          child: Text('+\$500.00',style: TextStyle(fontSize: 22, color: CKgreen),),),
                         Gap(12),
                         Text('10:45 Am')
                       ],

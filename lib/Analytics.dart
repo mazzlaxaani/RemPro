@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:rempro/contant/theme.dart';
 
 class AnalyticsPage extends StatefulWidget {
   const AnalyticsPage({super.key});
@@ -32,7 +33,7 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
-                color: Colors.black.withOpacity(0.05),
+                color: Ckwhite,
               ),
               padding: const EdgeInsets.all(20.0),
               child: Column(
