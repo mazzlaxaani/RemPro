@@ -30,7 +30,6 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
         child: Column(
           children: [
             Container(
-
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
                 color: Colors.black.withOpacity(0.05),
@@ -43,7 +42,6 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                       Expanded(child: Container(
 
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text('Total Spend', style: TextStyle(fontSize: 23),),
