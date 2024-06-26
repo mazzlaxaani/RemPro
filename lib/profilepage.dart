@@ -117,7 +117,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.only(top: 15),
                 width: double.infinity,
                 child: Column(
                   children: [
