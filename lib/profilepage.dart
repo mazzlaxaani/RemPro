@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rempro/Bank%20Accounts.dart';
 import 'package:rempro/contant/theme.dart';
 import 'package:gap/gap.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -64,7 +65,9 @@ class _ProfilePageState extends State<ProfilePage> {
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Cprimarycolor, // Change this to your desired color
                           ),
-                            onPressed: (){},
+                            onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => BankAccount()));
+                            },
                             child: Text('Account Details'.toUpperCase(), style: TextStyle(color: Colors.white),),
         
                         ),
