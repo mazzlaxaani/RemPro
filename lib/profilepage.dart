@@ -180,7 +180,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         ),
                       ],
                     ),
-                    Gap(12),
+                    Gap(8),
                     Row(
                       children: [
                         Expanded(
@@ -216,7 +216,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             child: Column(
                               children: [
                                 Container(
-                                  child: SvgPicture.asset('assets/bell.svg' , width: 27, height: 24,color: Cprimarycolor,),
+                                  child: SvgPicture.asset('assets/help.svg' , width: 27, height: 24,color: Cprimarycolor,),
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(50),
                                       color: Color(0xFFEFF3FC)
