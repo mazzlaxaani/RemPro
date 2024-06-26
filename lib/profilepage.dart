@@ -166,7 +166,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                   ),
                                   width: 55,
                                   height: 55,
-                                  padding: const EdgeInsets.all(10),
+                                  padding: const EdgeInsets.all(15),
                                   alignment: Alignment.center,
                                 ),
                                 Gap(12),
