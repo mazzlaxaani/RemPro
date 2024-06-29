@@ -68,31 +68,38 @@ class _BankAccountState extends State<BankAccount> {
                 padding: const EdgeInsets.all(20.0),
                 child: Column(
                     children: [
-                      Row(
-                        children: [
-                          Expanded(child: Container(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text('\$0.00', style: TextStyle(fontSize: 23),),
-                                Text('In Assets', textAlign: TextAlign.center,)
-                              ],
-                            ),
-                          ),
-                          ),
-        
-                          Expanded(
-                            child: Container(
+                      IntrinsicHeight(
+                        child: Row(
+                          children: [
+                            Expanded(child: Container(
                               child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Text('\$0.00',style: TextStyle(fontSize: 23),),
-                                  Text('In Debit'),
+                                  Text('\$0.00', style: TextStyle(fontSize: 23),),
+                                  Text('In Assets', textAlign: TextAlign.center,)
                                 ],
                               ),
+                             ),
                             ),
-                          ),
-        
-                        ],
+                            VerticalDivider(
+                              width: 1, // changed width to 1
+                              thickness: 1,
+                              indent: 2.2, // changed indent to 0
+                              endIndent: 2.2,
+                            ),
+                            Expanded(
+                              child: Container(
+                                child: Column(
+                                  children: [
+                                    Text('\$0.00',style: TextStyle(fontSize: 23),),
+                                    Text('In Debit'),
+                                  ],
+                                ),
+                              ),
+                            ),
+
+                          ],
+                        ),
                       ),
                       Gap(12),
                       Divider(),

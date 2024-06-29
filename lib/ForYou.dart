@@ -68,7 +68,10 @@ class _ForYourState extends State<ForYour> {
                     ),
                     padding: const EdgeInsets.all(12),
                   ),
-                  Divider(),
+                  Divider(
+                    indent: 20,
+                    endIndent: 20,
+                  ),
                   Container(
 
                     child: Row(
@@ -95,7 +98,8 @@ class _ForYourState extends State<ForYour> {
                     ),
                     padding: const EdgeInsets.all(12),
                   ),
-                  Divider(),
+                  Divider(indent: 20,
+                    endIndent: 20,),
                   Container(
 
                     child: Row(
@@ -122,7 +126,8 @@ class _ForYourState extends State<ForYour> {
                     ),
                     padding: const EdgeInsets.all(12),
                   ),
-                  Divider(),
+                  Divider(indent: 20,
+                    endIndent: 20,),
                   Container(
 
                     child: Row(
@@ -253,20 +258,27 @@ class _ForYourState extends State<ForYour> {
                       children: [
                         Text('Deadline',style: TextStyle(color: Color(0xFF85878C), fontSize: 20),),
                         Container(
-                          child: Row(
-                            children: [
-                            Text('17 Aug 2023', style: TextStyle(
-                              color: Color(0xFF85878C)
-                            ),),
-                            Gap(8),
-                              VerticalDivider(
-                                color: Colors.black,
-                                thickness: 2,
-                              ),
-                            Gap(8),
-                            Text('240 days to go',style: TextStyle(color: Color(0xFF85878C),),)
-                          ],
-                          ),
+                          child: IntrinsicHeight(
+                            child: Row(
+                              children: [
+                                Container(
+                                  child: Text('17 Aug 2023', style: TextStyle(
+                                      color: Color(0xFF85878C)
+                                  ),),
+                                ),
+                                Gap(5),
+                                VerticalDivider(
+                                  width: 1, // changed width to 1
+                                  thickness: 1,
+                                  indent: 2.2, // changed indent to 0
+                                  endIndent: 2.2, // changed endIndent to 0
+                                  color: Colors.black,
+                                ),
+                                Gap(5),
+                                Container(child: Text('240 days to go', style: TextStyle(color: Color(0xFF85878C),),))
+                              ],
+                            ),
+                          )
                         )
                       ],
                     ),

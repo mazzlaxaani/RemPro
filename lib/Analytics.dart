@@ -45,35 +45,42 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
               padding: const EdgeInsets.all(20.0),
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      Expanded(child: Container(
+                  IntrinsicHeight(
+                    child: Row(
+                      children: [
+                        Expanded(child: Container(
 
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text('Total Spend', style: TextStyle(fontSize: 23),),
-                            Text('\$500.00', textAlign: TextAlign.center,)
-                          ],
-                        ),
-                      ),
-                      ),
-                      Gap(12.0),
-                      VerticalDivider(width: 10,
-                        color: Colors.red,),
-
-                      Expanded(
-                        child: Container(
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text('Date',style: TextStyle(fontSize: 23),),
-                              Text('15 July - 24 Aug'),
+                              Text('Total Spend', style: TextStyle(fontSize: 23),),
+                              Text('\$500.00', textAlign: TextAlign.center,)
                             ],
                           ),
                         ),
-                      ),
+                        ),
+                        Gap(12.0),
+                        VerticalDivider(
+                          width: 1, // changed width to 1
+                          thickness: 1,
+                          indent: 2.2, // changed indent to 0
+                          endIndent: 2.2, // changed endIndent to 0
 
-                    ],
+                        ),
+
+                        Expanded(
+                          child: Container(
+                            child: Column(
+                              children: [
+                                Text('Date',style: TextStyle(fontSize: 23),),
+                                Text('15 July - 24 Aug'),
+                              ],
+                            ),
+                          ),
+                        ),
+
+                      ],
+                    ),
                   ),
                   Gap(12),
                   Divider(),

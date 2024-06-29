@@ -77,23 +77,20 @@ class _MainHomeState extends State<MainHome> {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            Card(
-                color: Colors.white,
-                child: Container(
-                  width: double.infinity,
-                  margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-                  height: 50,
-                  child: Center(
-                    child: Column(
-                      children: [
-                        Text('\$7,500.00',
-                          style: TextStyle(fontSize: 25.0,),
-                        ),
-                        Text("0,745274 Btc")
-                      ],
-                    ),
+            Container(
+                color: Ckwhite,
+                height: 80,
+                width: double.infinity,
+                child:Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text('\$7,500.00',
+                        style: TextStyle(fontSize: 25.0,),
+                      ),
+                      Text("0,745274 Btc")
+                    ],
                   ),
-                )
+
             ),
             Gap(15),
             Card(
@@ -115,7 +112,11 @@ class _MainHomeState extends State<MainHome> {
                               margin: const EdgeInsets.all(8.0),
                               width: 50.0,
                               height: 30.0,
-                              color: Colors.white24.withOpacity(0.2),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12),
+                                color: Colors.white24.withOpacity(0.2),
+                              ),
+
                             ),
                         ),
                         Padding(
