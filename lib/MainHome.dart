@@ -150,7 +150,6 @@ class _MainHomeState extends State<MainHome> {
               ),
             ),
             Gap(15),
-
             Container(
               height: 140,
               decoration: BoxDecoration(
@@ -180,7 +179,6 @@ class _MainHomeState extends State<MainHome> {
               ),
               ),
             ),
-
             Gap(15),
             Container(
               width: double.infinity,
@@ -218,7 +216,6 @@ class _MainHomeState extends State<MainHome> {
                         ],
                       ),
                     ),
-
                   Container(
                     width: 250,
                     decoration: BoxDecoration(
@@ -246,12 +243,10 @@ class _MainHomeState extends State<MainHome> {
                       ],
                     ),
                   ),
-
                 ],
               ),
             ),
             Gap(10),
-
           ],
         ),
       ),
