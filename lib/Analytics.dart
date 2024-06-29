@@ -2,6 +2,7 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:rempro/ForYou.dart';
 import 'package:rempro/contant/theme.dart';
 import 'package:fl_chart/fl_chart.dart';
 
@@ -208,7 +209,7 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                                       ),
                                       padding: const EdgeInsets.all(8),
 
-                                      child: Text('+\$15.42',style: TextStyle(fontSize: 22, color: Color(0xFFDE1A1A)),),),
+                                      child: Text('-\$15.42',style: TextStyle(fontSize: 22, color: Color(0xFFDE1A1A)),),),
                                     Gap(12),
                                     Text('01:20 PM', textAlign: TextAlign.center,),
                                   ],
@@ -234,17 +235,17 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                               Container(
                                 child: Column(
                                   children: [
-                                    Text('Visionary',overflow: TextOverflow.ellipsis,
+                                    Text('Catalyst',overflow: TextOverflow.ellipsis,
                                       maxLines: 1,
                                       style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),),
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(10.0),
-                                        color: Color(0xFFFBE8E8),
+                                        color: Color(0xFFDBF4E6),
                                       ),
                                       padding: const EdgeInsets.all(8),
 
-                                      child: Text('+\$15.42',style: TextStyle(fontSize: 22, color: Color(0xFFDE1A1A)),),),
+                                      child: Text('+\$23.50',style: TextStyle(fontSize: 22, color: Color(0xFF1EB15F)),),),
                                     Gap(12),
                                     Text('01:20 PM', textAlign: TextAlign.center,),
                                   ],
@@ -272,7 +273,11 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                   backgroundColor: Cprimarycolor, // Change this to your desired color
                 ),
                 onPressed: (){
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => BankAccount()));
+
+                  Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => ForYour(),
+                    ),
+                  );
                 },
                 child: Text('For you'.toUpperCase(), style: TextStyle(color: Colors.white),),
 
