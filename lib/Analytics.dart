@@ -80,9 +80,204 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                   Container(
                     child: BarChartSample1(),
                   ),
+                  Divider(),
+                  Container(
+                    padding: const EdgeInsets.only(left: 12),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 20,
+                                width: 20,
+                                decoration: BoxDecoration(
+                                  color: Cprimarycolor,
+                                  borderRadius: BorderRadius.circular(5),
+                                ),
+                              ),
+                              Gap(12),
+                              Text('Regular Spend'),
+                            ],
+                          ),
+                        ),
+
+                        Gap(12),
+                        Container(
+                          child: Row(
+                            children: [
+                              Container(
+                                height: 20,
+                                width: 20,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFFECEDF0),
+                                  borderRadius: BorderRadius.circular(5),
+                                ),
+                              ),
+                              Gap(12),
+                              Text('Regular Spend'),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
                 ]
               ),
-            )
+            ),
+            Gap(12),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                color: Ckwhite,
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text('Activity',style: TextStyle(fontSize: 20),),
+                      Text('See All', style: TextStyle(color: Color(0xFF3A3C40),),),
+                    ],
+                  ),
+                  Gap(12),
+                  Container(
+                    width: double.infinity,
+                    height: 140,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.all(12),
+                          width: 155,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(18),
+                            color: Colors.black.withOpacity(0.1),
+                          ),
+                          child: Row(
+                            children: [
+                              Container(
+                                child: Column(
+                                  children: [
+                                    Text('Astra Luxus',overflow: TextOverflow.ellipsis,
+                                      maxLines: 1,
+                                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10.0),
+                                        color: Color(0xFFDBF4E6),
+                                      ),
+                                      padding: const EdgeInsets.all(8),
+
+                                      child: Text('+\$18.90',style: TextStyle(fontSize: 22, color: CKgreen),),),
+                                    Gap(12),
+                                    Text('09:00 Am', textAlign: TextAlign.center,),
+                                  ],
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                ),
+
+                              ),
+
+                            ],
+
+                          ),
+                        ),
+                        Gap(12),
+                        Container(
+                          padding: const EdgeInsets.all(12),
+                          width: 155,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(18),
+                            color: Colors.black.withOpacity(0.1),
+                          ),
+                          child: Row(
+                            children: [
+                              Container(
+                                child: Column(
+                                  children: [
+                                    Text('Visionary',overflow: TextOverflow.ellipsis,
+                                      maxLines: 1,
+                                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10.0),
+                                        color: Color(0xFFFBE8E8),
+                                      ),
+                                      padding: const EdgeInsets.all(8),
+
+                                      child: Text('+\$15.42',style: TextStyle(fontSize: 22, color: Color(0xFFDE1A1A)),),),
+                                    Gap(12),
+                                    Text('01:20 PM', textAlign: TextAlign.center,),
+                                  ],
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                ),
+
+                              ),
+
+                            ],
+
+                          ),
+                        ),
+                        Gap(12),
+                        Container(
+                          width: 155,
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(18),
+                            color: Colors.black.withOpacity(0.1),
+                          ),
+                          child: Row(
+                            children: [
+                              Container(
+                                child: Column(
+                                  children: [
+                                    Text('Visionary',overflow: TextOverflow.ellipsis,
+                                      maxLines: 1,
+                                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),),
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10.0),
+                                        color: Color(0xFFFBE8E8),
+                                      ),
+                                      padding: const EdgeInsets.all(8),
+
+                                      child: Text('+\$15.42',style: TextStyle(fontSize: 22, color: Color(0xFFDE1A1A)),),),
+                                    Gap(12),
+                                    Text('01:20 PM', textAlign: TextAlign.center,),
+                                  ],
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                ),
+
+                              ),
+
+                            ],
+
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Gap(12),
+            SizedBox(
+              width: double.infinity,
+              height: 52,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Cprimarycolor, // Change this to your desired color
+                ),
+                onPressed: (){
+                  //Navigator.push(context, MaterialPageRoute(builder: (context) => BankAccount()));
+                },
+                child: Text('For you'.toUpperCase(), style: TextStyle(color: Colors.white),),
+
+              ),
+            ),
           ],
         ),
       ),
@@ -104,7 +299,7 @@ class BarChartSample1 extends StatelessWidget {
           titlesData: const FlTitlesData(
             show: true, // Show titles
             bottomTitles: AxisTitles(
-              sideTitles: SideTitles(showTitles: false),
+              sideTitles: SideTitles(showTitles: true),
             ) ,
             leftTitles: AxisTitles(
               sideTitles: SideTitles(showTitles: false),
